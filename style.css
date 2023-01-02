@@ -1,0 +1,283 @@
+body {
+  font-family: Roboto Slab;
+}
+
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  color: white;
+  background-color: black;
+  position: relative;
+  border-radius: 30px;
+}
+
+.banner h1 {
+  font-weight: bold;
+  font-size: 70px;
+}
+
+.banner h4 {
+  font-size: 20px;
+}
+
+.banner img {
+  position: absolute;
+  bottom: 0;
+  height: 70vh;
+  width: 80vh;
+}
+
+.banner-text {
+  padding: 10% 15%;
+}
+
+.c-s {
+  display: grid;
+  grid-template-columns: 25% 70%;
+  gap: 5%;
+  margin: 130px 0px;
+}
+
+.schedule {
+  /* display: inline; */
+  height: 35vh;
+  width: 40vh;
+  padding-top: 20px;
+  margin-right: 20px;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+}
+
+.cardImg {
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  justify-content: center;
+}
+.cardImg h1 {
+  text-align: center;
+}
+
+.cards {
+  /* display: inline; */
+  /* width: 75%; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.sbox {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  margin: 30px;
+  padding: 20px 40px;
+  text-align: center;
+}
+
+#pageLink {
+  background-color: red;
+  border-radius: 10px;
+  margin: 30px;
+  color: whitesmoke;
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.schedule a {
+  text-decoration: none;
+}
+
+.card {
+  height: 362px;
+  width: 100%;
+  border-style: solid;
+  border-radius: 13px;
+}
+
+.card2 {
+  height: 200px;
+  width: 100%;
+  border-style: solid;
+  border-radius: 13px;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card img {
+  width: 100%;
+  height: 50%;
+}
+
+.card h5 {
+  padding: 3px 0px;
+  border: 2px solid gray;
+  width: 100px;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+}
+.icons i {
+  margin-right: 30px;
+}
+.ct {
+  margin-left: 15px;
+}
+.ct2 {
+  text-align: center;
+}
+
+.footer {
+  width: 100%;
+  height: 444px;
+  background-color: black;
+  color: whitesmoke;
+}
+
+.footer h1 {
+  text-align: center;
+  padding-top: 3%;
+}
+.f-item {
+  display: flex;
+  justify-content: center;
+}
+
+.f-item p {
+  padding: 0px 15px;
+}
+
+.fa-brands {
+  font-size: xx-large;
+  padding: 0px 15px;
+}
+
+.socialIcon {
+  display: flex;
+  justify-content: center;
+}
+/* tablet */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .cards {
+    display: inline;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .banner img {
+    position: absolute;
+    bottom: 0;
+    height: 70vh;
+    width: 30vh;
+  }
+
+  .schedule {
+    display: inline;
+    height: 35vh;
+    width: 40vh;
+    padding-top: 20px;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 10px;
+    color: white;
+  }
+
+  .c-s {
+    display: inline;
+    margin: 130px 0px;
+  }
+  .sbox {
+    background-color: white;
+    color: black;
+    border: 1px solid gray;
+    /* margin: 30px; */
+    /* padding: 20px 10px; */
+    text-align: center;
+  }
+
+  #pageLink {
+    background-color: red;
+    border-radius: 10px;
+    margin: 30px;
+    color: whitesmoke;
+    padding: 20px 40px;
+    text-align: center;
+  }
+}
+
+/* mobile */
+
+@media screen and (max-width: 576px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .banner {
+    display: grid;
+    grid-template-columns: 1;
+    justify-content: center;
+    /* display: grid;
+    grid-template-columns: repeat(1, 100%); */
+    color: white;
+    background-color: black;
+
+    border-radius: 30px;
+  }
+  .schedule {
+    display: inline;
+    height: 35vh;
+    width: 40vh;
+    padding-top: 20px;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 10px;
+    color: white;
+  }
+  .c-s {
+    display: inline;
+    margin: 130px 0px;
+  }
+  .banner img {
+    position: absolute;
+    bottom: 0;
+  }
+  .banner h1 {
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .banner h4 {
+    font-size: 14px;
+  }
+  .f-item {
+    display: grid;
+    grid-template-columns: 1;
+    justify-content: center;
+  }
+}
